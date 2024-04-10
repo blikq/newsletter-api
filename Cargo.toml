@@ -19,6 +19,7 @@ rustflags = ["-C", "link-arg=-fuse-ld=lld"]
 
 [dependencies]
 actix-web = {version = "4", features = ["openssl",]}
+reqwest = "0.12.3"
 serde = "1.0.197"
 tokio = "1.37.0"
 

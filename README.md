@@ -1,3 +1,3 @@
-## NEWSLETTER-API
+# NEWSLETTER-API
 
-# A newletter api written in actix web rust
+### A newletter api written in actix web rust
