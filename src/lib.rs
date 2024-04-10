@@ -1,11 +1,13 @@
 use actix_web::*;
-use std::sync::Mutex;
-
+use std::{sync::Mutex, future::IntoFuture};
+mod handlers;
 
 #[get("/health_check")]
 async fn health_check() -> impl Responder {
-    HttpResponse::Ok()
+    handlers::health_check::main()
 }
+
+
 
 pub async fn run() -> std::io::Result<()> {
     
